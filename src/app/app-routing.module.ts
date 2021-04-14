@@ -96,7 +96,7 @@ const routes: Routes = [
 
       // // Charts
 
-      { path: 'charts/chartjs', component: ChartjsComponent, data: { extraParameter: '' } },
+      { path: '', component: ChartjsComponent, data: { extraParameter: '' } },
 
     ]
 
@@ -108,12 +108,12 @@ const routes: Routes = [
 
       // User Pages
 
-      { path: 'pages/login-boxed', component: LoginBoxedComponent, data: { extraParameter: '' } },
-      { path: 'pages/register-boxed', component: RegisterBoxedComponent, data: { extraParameter: '' } },
-      { path: 'pages/forgot-password-boxed', component: ForgotPasswordBoxedComponent, data: { extraParameter: '' } },
+      { path: 'login', component: LoginBoxedComponent, data: { extraParameter: '' } },
+      { path: 'register', component: RegisterBoxedComponent, data: { extraParameter: '' } },
+      { path: 'forgot-password', component: ForgotPasswordBoxedComponent, data: { extraParameter: '' } },
     ]
   },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
