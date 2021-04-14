@@ -45,9 +45,9 @@ import { FooterComponent } from './view/Layout/Components/footer/footer.componen
 
 // Pages
 
-import { ForgotPasswordBoxedComponent } from './view/DemoPages/UserPages/forgot-password-boxed/forgot-password-boxed.component';
-import { LoginBoxedComponent } from './view/DemoPages/UserPages/login-boxed/login-boxed.component';
-import { RegisterBoxedComponent } from './view/DemoPages/UserPages/register-boxed/register-boxed.component';
+import { ForgotPasswordBoxedComponent } from './view/DemoPages/Auth/forgot-password-boxed/forgot-password-boxed.component';
+import { LoginBoxedComponent } from './view/DemoPages/Auth/login-boxed/login-boxed.component';
+import { RegisterBoxedComponent } from './view/DemoPages/Auth/register-boxed/register-boxed.component';
 // Widgets
 import { ChartBoxes3Component } from './view/DemoPages/Widgets/chart-boxes3/chart-boxes3.component';
 // Charts

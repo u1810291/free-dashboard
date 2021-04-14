@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BaseLayoutComponent } from './view/Layout/base-layout/base-layout.component';
 import { PagesLayoutComponent } from './view/Layout/pages-layout/pages-layout.component';
-import { ForgotPasswordBoxedComponent } from './view/DemoPages/UserPages/forgot-password-boxed/forgot-password-boxed.component';
-import { LoginBoxedComponent } from './view/DemoPages/UserPages/login-boxed/login-boxed.component';
-import { RegisterBoxedComponent } from './view/DemoPages/UserPages/register-boxed/register-boxed.component';
+import { ForgotPasswordBoxedComponent } from './view/DemoPages/Auth/forgot-password-boxed/forgot-password-boxed.component';
+import { LoginBoxedComponent } from './view/DemoPages/Auth/login-boxed/login-boxed.component';
+import { RegisterBoxedComponent } from './view/DemoPages/Auth/register-boxed/register-boxed.component';
 
 import { ChartjsComponent } from './view/DemoPages/Charts/chartjs/chartjs.component';
 
