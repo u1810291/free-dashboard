@@ -54,10 +54,13 @@
             <div class="divider"></div>
             <h6 class="mb-0">
               No account?
-              <a [routerLink]="" class="text-primary">Sign up now</a></h6></div>
+              <a [routerLink]="['/register']" class="text-primary">Sign up now</a>
+            </h6>
+          </div>
           <div class="modal-footer clearfix">
-            <div class="float-left"><a [routerLink]="" class="btn-lg btn btn-link">Recover
-              Password</a></div>
+            <div class="float-left">
+              <a [routerLink]="['/forgot-password']" class="btn-lg btn btn-link">Recover Password</a>
+            </div>
             <div class="float-right">
               <button type="button" class="btn btn-primary btn-lg">Login to Dashboard</button>
             </div>

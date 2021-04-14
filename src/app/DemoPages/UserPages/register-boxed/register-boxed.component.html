@@ -39,7 +39,8 @@
                 </div>
               </div>
             </div>
-            <div class="custom-control custom-checkbox"><input id="exampleCheck" type="checkbox" name="check"
+            <div class="custom-control custom-checkbox">
+              <input id="exampleCheck" type="checkbox" name="check"
                                                                autocomplete="off" class="custom-control-input"
                                                                value="true"><label for="exampleCheck"
                                                                                    class="custom-control-label">
@@ -48,9 +49,9 @@
             <div class="divider"></div>
             <h6 class="mb-0">
               Already have an account?
-              <a [routerLink]="" class="text-primary">Sign in</a>
+              <a [routerLink]="['/login']" class="text-primary">Sign in</a>
               |
-              <a [routerLink]="" class="text-primary">Recover
+              <a [routerLink]="['/forgot-password']" class="text-primary">Recover
                 Password</a></h6></div>
           <div class="modal-footer d-block text-center">
             <button  type="button"
