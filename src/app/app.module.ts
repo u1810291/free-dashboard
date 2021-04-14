@@ -43,57 +43,16 @@ import { LogoComponent } from './view/Layout/Components/sidebar/elements/logo/lo
 
 import { FooterComponent } from './view/Layout/Components/footer/footer.component';
 
-// DEMO PAGES
-
-// Dashboards
-
-import { AnalyticsComponent } from './view/DemoPages/Dashboards/analytics/analytics.component';
-
 // Pages
 
 import { ForgotPasswordBoxedComponent } from './view/DemoPages/UserPages/forgot-password-boxed/forgot-password-boxed.component';
 import { LoginBoxedComponent } from './view/DemoPages/UserPages/login-boxed/login-boxed.component';
 import { RegisterBoxedComponent } from './view/DemoPages/UserPages/register-boxed/register-boxed.component';
-
-// Elements
-
-import { StandardComponent } from './view/DemoPages/Elements/Buttons/standard/standard.component';
-import { DropdownsComponent } from './view/DemoPages/Elements/dropdowns/dropdowns.component';
-import { CardsComponent } from './view/DemoPages/Elements/cards/cards.component';
-import { ListGroupsComponent } from './view/DemoPages/Elements/list-groups/list-groups.component';
-import { TimelineComponent } from './view/DemoPages/Elements/timeline/timeline.component';
-import { IconsComponent } from './view/DemoPages/Elements/icons/icons.component';
-
-// Components
-
-import { AccordionsComponent } from './view/DemoPages/Components/accordions/accordions.component';
-import { TabsComponent } from './view/DemoPages/Components/tabs/tabs.component';
-import { CarouselComponent } from './view/DemoPages/Components/carousel/carousel.component';
-import { ModalsComponent } from './view/DemoPages/Components/modals/modals.component';
-import { ProgressBarComponent } from './view/DemoPages/Components/progress-bar/progress-bar.component';
-import { PaginationComponent } from './view/DemoPages/Components/pagination/pagination.component';
-import { TooltipsPopoversComponent } from './view/DemoPages/Components/tooltips-popovers/tooltips-popovers.component';
-
-// Tables
-
-import { RegularComponent } from './view/DemoPages/Tables/regular/regular.component';
-import { TablesMainComponent } from './view/DemoPages/Tables/tables-main/tables-main.component';
-
 // Widgets
-
 import { ChartBoxes3Component } from './view/DemoPages/Widgets/chart-boxes3/chart-boxes3.component';
-
-// Forms Elements
-
-import { ControlsComponent } from './view/DemoPages/Forms/Elements/controls/controls.component';
-import { LayoutComponent } from './view/DemoPages/Forms/Elements/layout/layout.component';
-
 // Charts
-
 import { ChartjsComponent } from './view/DemoPages/Charts/chartjs/chartjs.component';
-
 // Chart.js Examples
-
 import { LineChartComponent } from './view/DemoPages/Charts/chartjs/examples/line-chart/line-chart.component';
 import { BarChartComponent } from './view/DemoPages/Charts/chartjs/examples/bar-chart/bar-chart.component';
 import { ScatterChartComponent } from './view/DemoPages/Charts/chartjs/examples/scatter-chart/scatter-chart.component';
@@ -132,58 +91,15 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     // FOOTER
 
     FooterComponent,
-
-    // DEMO PAGES
-
-    // Dashboards
-
-    AnalyticsComponent,
-
     // User Pages
-
     ForgotPasswordBoxedComponent,
     LoginBoxedComponent,
     RegisterBoxedComponent,
-
-    // Elements
-
-    StandardComponent,
-    IconsComponent,
-    DropdownsComponent,
-    CardsComponent,
-    ListGroupsComponent,
-    TimelineComponent,
-
-    // Components
-
-    AccordionsComponent,
-    TabsComponent,
-    CarouselComponent,
-    ModalsComponent,
-    ProgressBarComponent,
-    PaginationComponent,
-    TooltipsPopoversComponent,
-
-    // Tables
-
-    RegularComponent,
-    TablesMainComponent,
-
     // Dashboard Boxes
-
     ChartBoxes3Component,
-
-    // Form Elements
-
-    ControlsComponent,
-    LayoutComponent,
-
     // CHARTS
-
     ChartjsComponent,
-
     // Chart.js Examples
-
     LineChartComponent,
     BarChartComponent,
     DoughnutChartComponent,
