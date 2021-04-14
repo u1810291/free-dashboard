@@ -1,4 +1,4 @@
-# ArchitectUI - Angular 11 Bootstrap 4.6
+# This dashboard has been forked from ArchitectUI and updated for futher use.
 
 This admin dashboard was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
