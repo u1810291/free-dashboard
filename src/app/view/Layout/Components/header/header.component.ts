@@ -1,8 +1,8 @@
-import {Component, HostBinding} from '@angular/core';
-import {select} from '@angular-redux/store';
-import {Observable} from 'rxjs';
+import { Component, HostBinding } from '@angular/core';
+import { select } from '@angular-redux/store';
+import { Observable } from 'rxjs';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
-import {ThemeOptions} from '../../../theme-options';
+import { ThemeOptions } from '../../../../theme-options';
 
 @Component({
   selector: 'app-header',

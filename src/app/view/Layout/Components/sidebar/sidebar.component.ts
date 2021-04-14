@@ -1,8 +1,8 @@
-import {Component, HostListener, OnInit} from '@angular/core';
-import {ThemeOptions} from '../../../theme-options';
-import {select} from '@angular-redux/store';
-import {Observable} from 'rxjs';
-import {ActivatedRoute} from '@angular/router';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { ThemeOptions } from '../../../../theme-options';
+import { select } from '@angular-redux/store';
+import { Observable } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',

@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {ThemeOptions} from '../../../../../theme-options';
+import { Component, OnInit } from '@angular/core';
+import { ThemeOptions } from '../../../../../../theme-options';
 
 @Component({
   selector: 'app-user-box',

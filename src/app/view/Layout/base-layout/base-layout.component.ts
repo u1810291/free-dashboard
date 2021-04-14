@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {select} from '@angular-redux/store';
-import {Observable} from 'rxjs';
-import {ConfigActions} from '../../ThemeOptions/store/config.actions';
-import {ThemeOptions} from '../../theme-options';
-import {animate, query, style, transition, trigger} from '@angular/animations';
+import { Component } from '@angular/core';
+import { select } from '@angular-redux/store';
+import { Observable } from 'rxjs';
+import { ConfigActions } from '../../ThemeOptions/store/config.actions';
+import { ThemeOptions } from '../../../theme-options';
+import { animate, query, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-base-layout',
@@ -23,12 +23,12 @@ import {animate, query, style, transition, trigger} from '@angular/animations';
           }),
         ]),
         query(':enter', [
-          animate('200ms ease', style({opacity: 1, transform: 'translateY(0)'})),
+          animate('200ms ease', style({ opacity: 1, transform: 'translateY(0)' })),
         ]),
 
         query(':leave', [
-          animate('200ms ease', style({opacity: 0, transform: 'translateY(-20px)'})),
-         ], { optional: true })
+          animate('200ms ease', style({ opacity: 0, transform: 'translateY(-20px)' })),
+        ], { optional: true })
       ]),
     ])
   ]
