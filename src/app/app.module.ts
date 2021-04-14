@@ -8,43 +8,30 @@ import { rootReducer, ArchitectUIState } from './view/ThemeOptions/store';
 import { ConfigActions } from './view/ThemeOptions/store/config.actions';
 import { AppRoutingModule } from './app-routing.module';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
-
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-
 // BOOTSTRAP COMPONENTS
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { ChartsModule } from 'ng2-charts';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 // LAYOUT
-
 import { BaseLayoutComponent } from './view/Layout/base-layout/base-layout.component';
 import { PagesLayoutComponent } from './view/Layout/pages-layout/pages-layout.component';
 import { PageTitleComponent } from './view/Layout/Components/page-title/page-title.component';
-
 // HEADER
-
 import { HeaderComponent } from './view/Layout/Components/header/header.component';
 import { SearchBoxComponent } from './view/Layout/Components/header/elements/search-box/search-box.component';
 import { UserBoxComponent } from './view/Layout/Components/header/elements/user-box/user-box.component';
-
 // SIDEBAR
-
 import { SidebarComponent } from './view/Layout/Components/sidebar/sidebar.component';
 import { LogoComponent } from './view/Layout/Components/sidebar/elements/logo/logo.component';
-
 // FOOTER
-
 import { FooterComponent } from './view/Layout/Components/footer/footer.component';
-
 // Pages
-
 import { ForgotPasswordBoxedComponent } from './view/DemoPages/Auth/forgot-password-boxed/forgot-password-boxed.component';
 import { LoginBoxedComponent } from './view/DemoPages/Auth/login-boxed/login-boxed.component';
 import { RegisterBoxedComponent } from './view/DemoPages/Auth/register-boxed/register-boxed.component';
@@ -69,27 +56,19 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 @NgModule({
   declarations: [
-
     // LAYOUT
-
     AppComponent,
     BaseLayoutComponent,
     PagesLayoutComponent,
     PageTitleComponent,
-
     // HEADER
-
     HeaderComponent,
     SearchBoxComponent,
     UserBoxComponent,
-
     // SIDEBAR
-
     SidebarComponent,
     LogoComponent,
-
     // FOOTER
-
     FooterComponent,
     // User Pages
     ForgotPasswordBoxedComponent,
@@ -117,28 +96,22 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgReduxModule,
     CommonModule,
     LoadingBarRouterModule,
-
     // Angular Bootstrap Components
-
     PerfectScrollbarModule,
     NgbModule,
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-
     // Charts
-
     ChartsModule,
   ],
   providers: [
     {
       provide:
         PERFECT_SCROLLBAR_CONFIG,
-      // DROPZONE_CONFIG,
       useValue:
         DEFAULT_PERFECT_SCROLLBAR_CONFIG,
-      // DEFAULT_DROPZONE_CONFIG,
     },
     ConfigActions,
   ],
