@@ -1,3 +1,4 @@
+/* tslint:disable: variable-name */
 export class Weather {
   dt: number;
   temp: number;
@@ -16,5 +17,5 @@ export class Weather {
       description: string;
       icon: string;
     }
-  ]
+  ];
 }
