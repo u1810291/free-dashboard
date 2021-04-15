@@ -12,8 +12,8 @@
 
     .logo-src {
       background: url('/assets/images/logo-inverse.png');
-      width: 50px;
-      height: 80px;
+      height: $logo-height;
+      width: $logo-width;
     }
 
     .hamburger-inner,
