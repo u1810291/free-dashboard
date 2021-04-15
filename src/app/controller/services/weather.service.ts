@@ -1,4 +1,4 @@
-import { Weather } from '../../model/weather'
+import { Weather } from '../../model/weather';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 

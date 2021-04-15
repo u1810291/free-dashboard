@@ -12,6 +12,8 @@
 
     .logo-src {
       background: url('/assets/images/logo-inverse.png');
+      width: 50px;
+      height: 80px;
     }
 
     .hamburger-inner,
@@ -21,6 +23,7 @@
     }
 
     .hamburger-box:hover {
+
       .hamburger-inner,
       .hamburger-inner::before,
       .hamburger-inner::after {
@@ -43,7 +46,7 @@
       }
 
       & .vsm-item.active-item {
-        & > .vsm-link {
+        &>.vsm-link {
           @extend %side-link-hover;
         }
       }
@@ -70,13 +73,13 @@
       }
     }
 
-    perfect-scrollbar > .ps.ps--scrolling-y > .ps__rail-y,
+    perfect-scrollbar>.ps.ps--scrolling-y>.ps__rail-y,
     .ps .ps__rail-y:hover {
-      background-color: rgba(0,0,0,.05) !important;
+      background-color: rgba(0, 0, 0, .05) !important;
     }
 
     .ps__thumb-y {
-      background-color: rgba(0,0,0,.15) !important;
+      background-color: rgba(0, 0, 0, .15) !important;
     }
 
   }
