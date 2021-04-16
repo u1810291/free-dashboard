@@ -2,30 +2,31 @@
 /* tslint:disable: deprecation */
 
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
 import { WeatherService } from '../../../../controller/services/weather.service';
-import * as chartsReducer from '../../../ThemeOptions/store/charts/chart.reducer';
-
-export interface State {
-  charts: chartsReducer.State;
-}
 @Component({
   selector: 'app-chartjs',
   templateUrl: './chartjs.component.html',
   styles: []
 })
 export class ChartjsComponent implements OnInit {
+  charts: Observable<any>;
+
   heading = 'ChartJS';
   subheading = 'Huge selection of charts created with the Vue ChartJS Plugin';
   icon = 'pe-7s-bandaid icon-gradient bg-amy-crisp';
 
-  constructor(private apiService: WeatherService) { }
+  constructor(private apiService: WeatherService, private store: Store<{ charts: any }>) {
+    this.charts = store.select('charts');
+  }
+
   ngOnInit(): void {
     function toTimestamp(strDate) {
       const datum = Date.parse(strDate);
       return datum / 1000;
     }
     try {
-      console.log('response');
       const date = new Date();
       date.setDate(date.getDate() - 5);
       this.apiService.getOneCall(

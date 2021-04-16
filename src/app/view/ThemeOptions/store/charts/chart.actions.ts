@@ -4,15 +4,16 @@ import { NgRedux } from '@angular-redux/store';
 
 @Injectable()
 export class ChartActions {
-  static SET_ONE_CALL_CHART = 'TEST_SET_ONE_CALL_CHART';
+  static SET_CHART = 'SET_CHART';
 
   constructor(
     private ngRedux: NgRedux<UIState>,
   ) { }
 
-  getOneCall() {
+  setOneCall(payload) {
     this.ngRedux.dispatch({
-      type: ChartActions.SET_ONE_CALL_CHART,
+      type: ChartActions.SET_CHART,
+      oneCallChart: payload
     });
   }
 }
