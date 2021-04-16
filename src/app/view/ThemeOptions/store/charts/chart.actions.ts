@@ -15,6 +15,4 @@ export class ChartActions {
       type: ChartActions.SET_ONE_CALL_CHART,
     });
   }
-
-
 }
