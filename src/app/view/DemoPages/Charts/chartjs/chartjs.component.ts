@@ -8,6 +8,7 @@ import { WeatherService } from '../../../../controller/services/weather.service'
   templateUrl: './chartjs.component.html',
   styles: []
 })
+
 export class ChartjsComponent implements OnInit {
   heading = 'ChartJS';
   subheading = 'Huge selection of charts created with the Vue ChartJS Plugin';
