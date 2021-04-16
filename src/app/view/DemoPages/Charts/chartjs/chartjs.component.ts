@@ -3,7 +3,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../../../../controller/services/weather.service';
-import * as chartsReducer from '../../../ThemeOptions/store/charts/chart.reducer'
+import * as chartsReducer from '../../../ThemeOptions/store/charts/chart.reducer';
+
 export interface State {
   charts: chartsReducer.State;
 }
@@ -25,9 +26,15 @@ export class ChartjsComponent implements OnInit {
     }
     try {
       console.log('response');
-      this.apiService.getOneCall(41.311081, 69.240562, toTimestamp(new Date), '0097f77d9dc63d7d09fc9f7f8205c5fc').subscribe((res) => {
-        console.log(res);
-      });
+      const date = new Date();
+      date.setDate(date.getDate() - 5);
+      this.apiService.getOneCall(
+        41.311081,
+        69.240562,
+        toTimestamp(date),
+        '0097f77d9dc63d7d09fc9f7f8205c5fc').subscribe((res) => {
+          console.log(res);
+        });
     }
     catch (err) {
       throw new Error(`Method not implemented. ${err}`);
