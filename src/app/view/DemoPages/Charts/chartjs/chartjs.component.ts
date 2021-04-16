@@ -3,7 +3,6 @@
 
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../../../../controller/services/weather.service';
-import { Weather } from '../../../../model/weather';
 @Component({
   selector: 'app-chartjs',
   templateUrl: './chartjs.component.html',

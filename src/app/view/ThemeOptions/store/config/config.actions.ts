@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ArchitectUIState } from './index';
+import { ArchitectUIState } from '../index';
 import { NgRedux } from '@angular-redux/store';
 
 @Injectable()

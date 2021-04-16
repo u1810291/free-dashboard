@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgReduxModule } from '@angular-redux/store';
 import { NgRedux, DevToolsExtension } from '@angular-redux/store';
 import { rootReducer, ArchitectUIState } from './view/ThemeOptions/store';
-import { ConfigActions } from './view/ThemeOptions/store/config.actions';
+import { ConfigActions } from './view/ThemeOptions/store/config/config.actions';
 import { AppRoutingModule } from './app-routing.module';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { CommonModule } from '@angular/common';
