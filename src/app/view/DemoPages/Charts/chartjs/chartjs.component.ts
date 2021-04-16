@@ -3,12 +3,15 @@
 
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../../../../controller/services/weather.service';
+import * as chartsReducer from '../../../ThemeOptions/store/charts/chart.reducer'
+export interface State {
+  charts: chartsReducer.State;
+}
 @Component({
   selector: 'app-chartjs',
   templateUrl: './chartjs.component.html',
   styles: []
 })
-
 export class ChartjsComponent implements OnInit {
   heading = 'ChartJS';
   subheading = 'Huge selection of charts created with the Vue ChartJS Plugin';

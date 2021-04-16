@@ -1,5 +1,9 @@
 import { ChartActions } from './chart.actions';
 
+export interface State {
+  oneCall: []
+}
+
 const INITIAL_STATE = {
   oneCall: [],
 };

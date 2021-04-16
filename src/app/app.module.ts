@@ -119,7 +119,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 })
 
 export class AppModule {
-  constructor(private ngRedux: NgRedux<UIState>, private devTool: DevToolsExtension) {
+  constructor(private ngRedux: NgRedux<UIState>, devTool: DevToolsExtension) {
 
     this.ngRedux.configureStore(
       rootReducer,
