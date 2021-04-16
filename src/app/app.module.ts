@@ -4,8 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgReduxModule } from '@angular-redux/store';
 import { NgRedux, DevToolsExtension } from '@angular-redux/store';
-import { rootReducer, ArchitectUIState } from './view/ThemeOptions/store';
-import { ConfigActions } from './view/ThemeOptions/store/config.actions';
+import { rootReducer, UIState } from './view/ThemeOptions/store';
+import { ConfigActions } from './view/ThemeOptions/store/config/config.actions';
 import { AppRoutingModule } from './app-routing.module';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { CommonModule } from '@angular/common';
@@ -104,7 +104,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     ReactiveFormsModule,
     HttpClientModule,
     // Charts
-    ChartsModule,
+    ChartsModule
   ],
   providers: [
     {
@@ -119,12 +119,11 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 })
 
 export class AppModule {
-  constructor(private ngRedux: NgRedux<ArchitectUIState>,
-    private devTool: DevToolsExtension) {
+  constructor(private ngRedux: NgRedux<UIState>, devTool: DevToolsExtension) {
 
     this.ngRedux.configureStore(
       rootReducer,
-      {} as ArchitectUIState,
+      {} as UIState,
       [],
       [devTool.isEnabled() ? devTool.enhancer() : f => f]
     );

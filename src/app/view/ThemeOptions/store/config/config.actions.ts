@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ArchitectUIState } from './index';
+import { UIState } from '../index';
 import { NgRedux } from '@angular-redux/store';
 
 @Injectable()
@@ -8,7 +8,7 @@ export class ConfigActions {
   static CONFIG_UPDATE = 'CONFIG_UPDATE';
 
   constructor(
-    private ngRedux: NgRedux<ArchitectUIState>,
+    private ngRedux: NgRedux<UIState>,
   ) { }
 
   getConfig() {
